@@ -3,8 +3,13 @@
     "module": "commonjs",
     "target": "es6",
     "sourceMap": true,
-    "types": [
-      "node"
-    ]
-  }
+    "baseUrl": "./",
+    "paths": {
+      "phaser": ["./node_modules/phaser-ce/build/custom/phaser-split.js"]
+    }
+  },
+  "files": [
+    "./src/index..ts",
+    "./node_modules/phaser-ce/typescript/phaser.comments.d.ts"
+  ]
 }
