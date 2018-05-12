@@ -1,0 +1,11 @@
+{
+  "name": "learn-phaser",
+  "version": "1.0.0",
+  "description": "learning project for phaser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mefive",
+  "license": "ISC"
+}
