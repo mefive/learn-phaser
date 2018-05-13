@@ -6,10 +6,11 @@
     "baseUrl": "./",
     "paths": {
       "phaser": ["./node_modules/phaser-ce/build/custom/phaser-split.js"]
-    }
+    },
+    "types": ["node"]
   },
   "files": [
-    "./src/index..ts",
+    "./src/index.ts",
     "./node_modules/phaser-ce/typescript/phaser.comments.d.ts"
   ]
 }

@@ -27,6 +27,18 @@ module.exports = {
       { test: /phaser-split\.js$/, loader: 'expose-loader?Phaser' },
       { test: /p2\.js$/, loader: 'expose-loader?p2' },
       { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 100,
+              name: '[name].[hash:7].[ext]',
+            },
+          },
+        ],
+      }
     ],
   },
 
